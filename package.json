@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ArtyomResh/eslint-plugin-no-js"
+    "url": "https://github.com/artyomresh/eslint-plugin-filenames"
   },
   "keywords": [
     "eslint",
