@@ -1,0 +1,24 @@
+{
+  "name": "eslint-plugin-filenames",
+  "version": "0.0.0",
+  "description": "Force to name files according to folder name.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArtyomResh/eslint-plugin-no-js"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "filenames",
+    "folder name"
+  ],
+  "author": "Artyom Resh",
+  "peerDependencies": {
+    "eslint": ">=0.10.0"
+  }
+}
