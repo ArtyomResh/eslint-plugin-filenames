@@ -2,6 +2,20 @@
 
 var path = require('path');
 
+function toPascalCase(word) {
+    return word
+                .match(/[a-z]+/gi)
+                .map(function (word) {
+                    return  word
+                                .charAt(0)
+                                .toUpperCase()
+                        +
+                            word
+                                .substr(1);
+                })
+                .join('');
+}
+
 module.exports = {
     rules: {
         'filenames-according-to-folder': function(context) {
@@ -34,20 +48,6 @@ module.exports = {
                     /** Получаем пути от папок роутов и компонентов находящихся в них файлов **/
                     var pathInComponentFolder = pathFolderNames.slice(componentFolderNameIndex).concat(filepathData.name).join('/');
                     var pathInRouteFolder = pathFolderNames.slice(routeFolderNameIndex).concat(filepathData.name).join('/');
-
-                    function toPascalCase(word) {
-                        return word
-                                    .match(/[a-z]+/gi)
-                                    .map(function (word) {
-                                        return  word
-                                                    .charAt(0)
-                                                    .toUpperCase()
-                                            +
-                                                word
-                                                    .substr(1);
-                                    })
-                                    .join('');
-                    }
 
                     /**
                         Поочередно проверяем названия папок и файла на наличие
